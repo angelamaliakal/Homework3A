@@ -1,88 +1,105 @@
-<!doctype html?>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Homework3A</title>
-    <style>
-      body, html {background-color:#A6A6A6;
-	      padding: 0; 
-                  margin: 0;
-                  color: #878787;
-                 }
-      header h1 {text-align:center;
-                 font-family: arial, helvetica;
-                 font-size: 30px;
-                 }
-      header {background-color: #878787;
-              color: #fff; 
-              padding: 20px 40px; 
-              width: 100%; 
-              box-sizing: border-box;
-              }
-              
-      nav {background-color: #AD3DCB;
-           padding: 15px 0;
-          }
-      nav a {color: #fff;
-             font-size: 19px;
-             text-decoration: none;
-             }
-      nav ul {list-style-type: none;}
-      nav ul li{display: inline-block;} 
-      </style>
-    </head>
-    <body>
-      <header>
-        <h1>Header</h1>
-      </header>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our Team&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          </li>
-          <li>
-            <a href="#">Projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          </li>
-          <li>
-            <a href="#">Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          </li>
-          <li>
-            <form>
-              <input type='text' name='search' placeholder='Search Query'>
-              <input type="submit" value="Go!">
-            </form>
-          </li>
-        </ul>
-        </nav>
-      <div class="section">
-        <div class="content">
-           			<h2 class="heading"> Article Heading </h2>
-		          	<h4 class="articleContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </h4>
-		          	<h3 class="articleSubhead"> subsection </h3>
-	          		<h4 class="articleContent"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </h4>
-		          	<h3 class="articleSubhead"> Another subsection </h3>
-		          	<h4 class="articleContent"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </h4>
-        </div>
-          <div class ="aside">
-                <h2 class>Related</h2>
-			<li class="asidePoints" href="#"> Link 1 </li>
-			<li class="asidePoints" href="#"> Link 2 </li>
-			<li class="asidePoints" href="#"> Link 3 </li>
-			<li class="asidePoints" href="#"> Link 4 </li>
-			<li class="asidePoints" href="#"> Link 5</li>
-      </div>
-	 <div class="footer">
-		<footer class = "footer"> Copyright 2050 by nobody. All rights reserved. </footer>
-	      </div>
-      </div>
+<head>
+<title>Homework 3a</title>
+<meta charset="utf-8">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    </body>
+body {
+  margin: 0;
+  background-color:#A6A6A6;
+  padding: 0; 
+  color: #000;
+}
+
+/* Style the header */
+.header {
+  text-align:center;
+  font-family: arial, helvetica;
+  font-size: 25px;
+  color: #fff;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #AD3DCB;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 20%;
+  margin: 10px 0px 10px 10px;
+  background-color: #AD3DCB;
+}
+
+/* Middle column */
+.column.middle {
+  width: 70%;
+  margin: 10px 10px 10px 0px;
+  background-color: #fff;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Header</h1>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="row">
+
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+</div>
+  
+</body>
 </html>
-             
 
-                     
-    
