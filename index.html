@@ -17,10 +17,19 @@ body {
 
 /* Style the header */
 .header {
-  text-align:center;
+  text-align: center;
   font-family: arial, helvetica;
   font-size: 25px;
   color: #fff;
+}
+
+.h2 {
+  text-align: center;
+  font-style: italic;
+}
+
+.h3 {
+  font-style: italic;
 }
 
 /* Style the top navigation bar */
@@ -52,26 +61,29 @@ body {
   background-color: #AD3DCB;
 }
 
-/* Middle column */
+
 .column.middle {
   width: 70%;
   margin: 10px 10px 10px 0px;
   background-color: #fff;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.searchQuery {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 40px;
+  width: 200px;
+  height: 20px;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
+.searchButton {
+  background-color: #333333;
+  color: #FFF;
+  font-size: 16px;
+  width: 80px;
+  height: 27px;
 }
+
 </style>
 </head>
 <body>
@@ -81,25 +93,37 @@ body {
 </div>
 
 <div class="topnav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+  <a href="#">Home</a>
+  <a href="#">Our Team</a>
+  <a href="#">Projects</a>
+  <a href="#">Contact Us</a>
+  <form>
+  <input class = "searchQuery" type='text' name='Search' placeholder="Search Query">
+  <input class = "searchButton" type = 'submit' name = 'submit' value = "Go!">
+  </form>
 </div>
 
 <div class="row">
 
   <div class="column middle">
-    <h2>Main Content</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <h2 class="h2">Article Heading</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    
+    <h3 class="h3"> subsection</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. </p>
+    
+    <h3 class="h3"> Another subsection</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. </p>
   </div>
   
   <div class="column side">
-    <h2>Side</h2>
+    <h2>Related</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
   </div>
 </div>
   
 </body>
 </html>
-
